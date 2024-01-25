@@ -181,7 +181,7 @@ const Products = () => {
                               />{" "}
                             </p>
                             <p className="product-title-text">
-                              {product.description.slice(0, 40)}
+                              {product.description.slice(0, 50)}..
                             </p>
                             <div className="product-key-info">
                               <div className="product-price">
