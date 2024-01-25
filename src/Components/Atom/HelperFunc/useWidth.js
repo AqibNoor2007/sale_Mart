@@ -13,6 +13,6 @@ export const useWidth = (targetWidth) => {
     window.addEventListener("resize", handleResize);
     handleResize();
     return () => window.removeEventListener("resize", handleResize);
-  }, []);
+  }, [targetWidth]);
   return { isMobile };
 };

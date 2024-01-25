@@ -6,9 +6,9 @@ const Footer = () => {
     <>
       <div className="footer">
         <div style={{ marginBottom: "15px" }}>
-          <img src="/facebook.png" height={40} className="m-r-20" />
-          <img src="/linkedin.png" height={40} className="m-r-20" />
-          <img src="/twitter.png" height={40} className="m-r-20" />
+          <img src="/facebook.png" height={40} className="m-r-20" alt="" />
+          <img src="/linkedin.png" height={40} className="m-r-20" alt="" />
+          <img src="/twitter.png" height={40} className="m-r-20" alt="" />
         </div>
         <div className="footer-btn">
           <p style={{ fontSize: "20px" }}>
@@ -21,11 +21,11 @@ const Footer = () => {
           <div>
             <Button
               defaultClass="icon"
-              icon={<img src="/playStore.avif" height={40} />}
+              icon={<img src="/playStore.avif" height={40} alt="" />}
             />
             <Button
               defaultClass="icon"
-              icon={<img src="/appStore.avif" height={40} />}
+              icon={<img src="/appStore.avif" height={40} alt="" />}
             />
           </div>
         </div>

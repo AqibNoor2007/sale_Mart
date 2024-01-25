@@ -2,10 +2,9 @@ import React from "react";
 import { Button, WebHeader, Footer } from "../../Components/Atom";
 import "./landing.css";
 import TestiCard from "../../Components/Molicules/LandingPage/testiCard";
-import { NavLink, useNavigate } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Landing = () => {
-  const navigate = useNavigate();
   return (
     <>
       <div className="landingPage">
@@ -61,7 +60,7 @@ const Landing = () => {
             <p className="test-headline text-white" style={{ marginTop: "0" }}>
               Ensure production quality with
             </p>
-            <img src="/verified.png" className="img" />
+            <img src="/verified.png" className="img" alt="" />
             <p className="test-headline text-white">
               Connect with a variety of suppliers, including Custom
               Manufacturers, Brand Holders, and Multispecialty Suppliers, that
@@ -69,7 +68,7 @@ const Landing = () => {
             </p>
             <div className="testi-btn">
               <Button
-                icon={<img src={"/video.png"} height={25} />}
+                icon={<img src={"/video.png"} height={25} alt="" />}
                 content="Watch Video"
                 onClick={() => console.log("test")}
                 varient="icon-primary"
@@ -85,7 +84,7 @@ const Landing = () => {
             <p className="test-headline text-white" style={{ marginTop: "0" }}>
               Protect your purchases with
             </p>
-            <img src="/trade.avif" className="img" />
+            <img src="/trade.avif" className="img" alt="" />
             <p className="test-headline text-white">
               Source confidently for your business knowing that orders made
               through Trade Assurance on Alibaba.com are protected, from payment
@@ -93,7 +92,7 @@ const Landing = () => {
             </p>
             <div className="testi-btn">
               <Button
-                icon={<img src={"/video.png"} height={25} />}
+                icon={<img src={"/video.png"} height={25} alt="" />}
                 content="Watch Video"
                 onClick={() => console.log("test")}
                 varient="icon-primary"

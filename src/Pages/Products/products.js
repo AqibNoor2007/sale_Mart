@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { AppHeader } from "../../Components/Atom/Hearder/webHearder";
 import Fillter from "../../Components/Molicules/Filter/filtter";
 import "./products.css";
@@ -20,13 +20,9 @@ const Products = () => {
 
   const navigate = useNavigate();
 
-  useEffect(() => {
-    getProducts();
-  }, [currentPage, search, fillter]);
-
   const { isMobile } = useWidth(992);
 
-  const getProducts = async () => {
+  const getProducts = useCallback(async () => {
     setProducts();
     setError();
     if (search) {
@@ -44,6 +40,7 @@ const Products = () => {
         setError("Some thing went wrong our team is fixing this (Thank You)");
       }
     } else if (fillter.categories.length > 0) {
+      setCurrentPage(1);
       try {
         const response = await axios.get(
           `https://dummyjson.com/products/category/${
@@ -72,7 +69,11 @@ const Products = () => {
         setError("Some thing went wrong our team is fixing this (Thank You)");
       }
     }
-  };
+  }, [search, fillter, currentPage]);
+
+  useEffect(() => {
+    getProducts();
+  }, [getProducts]);
 
   const createPageBtn = () => {
     const totalPages = Math.ceil(totalProducts / limit);
@@ -83,9 +84,13 @@ const Products = () => {
           key={i}
           className={`page-item ${currentPage === i ? "active" : ""}`}
         >
-          <a className="page-link" href="#" onClick={() => setCurrentPage(i)}>
+          <p
+            className="page-link"
+            style={{ cursor: "pointer" }}
+            onClick={() => setCurrentPage(i)}
+          >
             {i}
-          </a>
+          </p>
         </li>
       );
     }
@@ -166,7 +171,7 @@ const Products = () => {
                     <div className="product-list">
                       {products &&
                         products.map((product) => (
-                          <div className="product">
+                          <div className="product" key={product.id}>
                             <p className="product-image">
                               <img
                                 alt=""
