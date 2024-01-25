@@ -1,0 +1,200 @@
+.landingPage {
+  background-image: url(../../../public/hreo.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+}
+.hero-content {
+  padding: 78px 91px 174px 91px;
+}
+.heading {
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  color: #fff;
+  display: -webkit-box;
+  font-size: 58px;
+  font-weight: 600;
+  line-height: 70px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 950px;
+  width: 100%;
+  margin-bottom: 50px;
+}
+.testinomial {
+  background-image: url(../../../public/testonimial.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  padding: 71px 91px;
+}
+.testi-heading {
+  display: -webkit-box;
+  font-size: 58px;
+  font-weight: 600;
+  line-height: 70px;
+  margin-bottom: 100px;
+  max-width: 1200px;
+  width: 100%;
+  color: white;
+}
+.testi-card {
+  display: flex;
+  gap: 25px;
+}
+.sign-in {
+  display: none;
+}
+.test-headline {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.testi-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.tour {
+  padding: 70px 91px;
+}
+.factory-tour {
+  display: flex;
+  gap: 25px;
+}
+.factory-tour > div {
+  flex: 1;
+  max-width: 33%;
+  height: 500px;
+  box-sizing: border-box;
+  padding: 10px;
+}
+.factory-tour > div {
+  border: 1px solid #ccc;
+  margin: 5px;
+  text-align: center;
+}
+.factory-1 {
+  background-image: url(../../../public/factory1.webp);
+}
+.factory-2 {
+  background-image: url(../../../public/factory2.avif);
+}
+.factory-3 {
+  background-image: url(../../../public/factory3.avif);
+}
+.navLink {
+  text-decoration: none !important;
+}
+
+.factory-content {
+  font-weight: 600;
+  font-size: 20px;
+  color: white;
+  text-align: left;
+  margin-left: 20px;
+}
+
+.factory-common {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+}
+.testi-card .img {
+  height: 70px;
+}
+@media screen and (max-width: 992px) {
+  .landingPage {
+    background-position: left;
+  }
+  .hero-content {
+    padding: 68px 42px 150px 42px;
+  }
+  .testinomial {
+    padding: 40px 42px;
+  }
+  .tour {
+    padding: 40px 42px;
+  }
+  .tab-padding {
+    padding: 25px !important;
+  }
+  .testi-heading {
+    font-size: 40px;
+  }
+  .heading {
+    font-size: 40px;
+  }
+  .testi-card {
+    flex-direction: column !important;
+  }
+  .factory-tour {
+    flex-direction: column;
+  }
+  .factory-tour > div {
+    max-width: 100%;
+    min-height: 500px;
+  }
+  .testinomial {
+    background-position: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sign-in {
+    display: block;
+  }
+  .hero-content {
+    padding: 40px 30px 100px 30px !important;
+  }
+  .testinomial {
+    padding: 40px 30px;
+  }
+  .tour {
+    padding: 40px 30px;
+  }
+  .testi-heading {
+    margin-bottom: 60px !important;
+    font-size: 30px !important;
+  }
+  .heading {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .hero-content {
+    padding: 25px 30px 100px 30px !important;
+  }
+  .tour {
+    padding: 10px 30px 20px 30px;
+  }
+  .tour h1 {
+    font-size: 25px;
+  }
+  .factory-tour > div {
+    max-width: 100%;
+    min-height: 300px;
+  }
+  .heading {
+    line-height: 45px;
+  }
+  .testi-heading {
+    margin-bottom: 20px !important;
+    font-size: 25px;
+    line-height: 38px;
+  }
+  .f-s-30 {
+    font-size: 25px;
+  }
+  .testi-btn {
+    flex-direction: column;
+  }
+  .testi-card .img {
+    height: 40px !important;
+  }
+}

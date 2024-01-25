@@ -1,0 +1,42 @@
+.filter-body {
+  float: left;
+  margin-right: 20px;
+  position: relative;
+}
+.w-100 {
+  width: 100%;
+}
+.w-300 {
+  width: 300px;
+}
+.filter {
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 17px 12px;
+}
+.label {
+  display: flex;
+  gap: 8px;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+.border-bottom {
+  border-bottom: 1.5px solid;
+}
+.cancle-reset {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.sidebar-open .filter-body:before {
+  background: #00000033;
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+}

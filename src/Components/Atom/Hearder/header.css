@@ -1,0 +1,92 @@
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 42px;
+  color: white;
+}
+.activity-btn {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.mobileNav {
+  display: none;
+}
+
+.logo-height {
+  height: 37px;
+}
+.tab-search {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .hide-btn {
+    display: none;
+  }
+  .logo-height {
+    margin-bottom: 20px;
+  }
+
+  .appMain {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .appLogo {
+    height: 30px;
+  }
+  .appMain > :first-child {
+    width: auto !important;
+  }
+  .appMain > :nth-child(2) {
+    width: 100% !important;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .main {
+    padding: 20px 30px;
+  }
+  .appMain {
+    padding: 20px 30px;
+  }
+  .logo-height {
+    height: 30px;
+  }
+}
+
+.searchInput {
+  position: relative;
+}
+.rapeBtn {
+  position: absolute;
+}
+.form-control {
+  border-radius: 50px 0 0 50px !important;
+  padding: 10px 20px !important;
+}
+
+.form-control:focus {
+  border-color: #f60 !important;
+  box-shadow: 0 0 0 0.25rem rgba(233, 100, 41, 0.3) !important;
+}
+.appMain {
+  display: flex;
+  align-items: center;
+  padding: 20px 42px;
+  justify-content: space-between;
+}
+.appLogo {
+  width: 100%;
+}
+.appMain > :first-child {
+  width: 25%;
+}
+.appMain > :nth-child(2) {
+  width: 70%;
+}
