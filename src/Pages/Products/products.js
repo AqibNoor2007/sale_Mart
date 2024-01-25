@@ -26,6 +26,7 @@ const Products = () => {
     setProducts();
     setError();
     if (search) {
+      setCurrentPage(1);
       try {
         const response = await axios.get(
           `https://dummyjson.com/products/search?q=${search}&limit=${limit}&skip=${
